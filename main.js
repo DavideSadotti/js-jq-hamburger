@@ -20,7 +20,7 @@ var lista = $('header a>i');
 var panino = $('.hamburger-menu');
 var aperto = false;
 
-menu.click(
+lista.click(
   function(){
     switch (aperto) {
       case false:
@@ -32,5 +32,15 @@ menu.click(
         aperto = false;
         break;
     }
+  }
+);
+
+// TERZA PROVA CON TOGGLE
+var menuToggle = $('header a>i');
+var paninoToggle = $('.hamburger-menu');
+
+menuToggle.click(
+  function(){
+    paninoToggle.fadeToggle('slow');
   }
 );
